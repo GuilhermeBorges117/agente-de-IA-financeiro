@@ -13,9 +13,6 @@ Este projeto apresenta o desenvolvimento de um assistente financeiro que ajuda u
 - Receber recomendações de investimento personalizadas
 - Entender melhor seu comportamento financeiro
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
-
 ---
 
 ## O Que Você Deve Entregar
@@ -35,7 +32,7 @@ Defina **o que** seu agente faz e **como** ele funciona:
 
 ### 2. Base de Conhecimento
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+O sistema utiliza dados estruturados para gerar respostas inteligentes::
 
 | Arquivo | Formato | Descrição |
 |---------|---------|-----------|
