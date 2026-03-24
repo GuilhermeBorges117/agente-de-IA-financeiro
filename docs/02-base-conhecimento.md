@@ -11,30 +11,46 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
 
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
-
 ---
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
+Os dados mockados foram adaptados para simular um cenário mais próximo da realidade de um usuário comum.
 
-[Sua descrição aqui]
+As principais adaptações incluem:
+
+Inclusão de categorias de gastos (alimentação, transporte, lazer)
+Definição de metas financeiras no perfil do usuário
+Organização de produtos financeiros por nível de risco
+Estruturação do histórico de atendimento com temas e status de resolução
+
+Essas adaptações permitem que o agente forneça respostas mais contextualizadas e úteis.
 
 ---
 
 ## Estratégia de Integração
 
-### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
+Estratégia de Integração
+Como os dados são carregados?
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os arquivos CSV e JSON são carregados diretamente no sistema utilizando Python no início da execução da aplicação.
+
+CSV: carregados como listas ou estruturas tabulares
+JSON: carregados como dicionários
+
+Esses dados ficam disponíveis em memória para consulta durante a interação com o usuário.
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Os dados não são totalmente inseridos no system prompt.
+
+O agente utiliza uma abordagem híbrida:
+
+Parte dos dados (perfil do usuário) pode ser incluída no contexto inicial
+Dados dinâmicos (transações, histórico) são consultados conforme a necessidade
+As respostas são geradas com base nas informações relevantes recuperadas no momento da pergunta
+
+Isso evita sobrecarga de contexto e melhora a precisão das respostas.
 
 ---
 
