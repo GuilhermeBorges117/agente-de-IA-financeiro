@@ -56,8 +56,6 @@ Isso evita sobrecarga de contexto e melhora a precisão das respostas.
 
 ## Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
-
 ```
 Dados do Cliente:
 - Nome: João Silva
