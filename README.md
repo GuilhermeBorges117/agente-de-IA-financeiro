@@ -8,10 +8,10 @@ Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots
 
 Este projeto apresenta o desenvolvimento de um assistente financeiro que ajuda usuários a:
 
-- **Controlar gastos de forma automatizada
-- **Acompanhar metas financeiras
-- **Receber recomendações de investimento personalizadas
-- **Entender melhor seu comportamento financeiro
+- ** Controlar gastos de forma automatizada
+- ** Acompanhar metas financeiras
+- ** Receber recomendações de investimento personalizadas
+- ** Entender melhor seu comportamento financeiro
 
 > [!TIP]
 > Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
