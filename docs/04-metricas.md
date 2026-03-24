@@ -2,23 +2,19 @@
 
 ## Como Avaliar seu Agente
 
-A avaliação pode ser feita de duas formas complementares:
+A avaliação do Nexus Finance Bot foi realizada de duas formas:
 
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
-
+Testes estruturados: Simulação de perguntas com base nos dados do cliente João Silva;
+Validação lógica: Conferência manual das respostas com os dados do sistema (CSV e JSON).
 ---
 
 ## Métricas de Qualidade
 
 | Métrica | O que avalia | Exemplo de teste |
 |---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
-
-> [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
+| **Assertividade** | O agente respondeu corretamente com base nos dados | Perguntar o saldo e verificar se bate com o cálculo das transações |
+| **Segurança** | O agente evita inventar informações | Perguntar algo fora do escopo e verificar se ele admite não saber |
+| **Coerência** | A resposta faz sentido com o perfil do cliente | Recomendar investimentos compatíveis com perfil moderado |
 
 ---
 
@@ -27,45 +23,57 @@ A avaliação pode ser feita de duas formas complementares:
 Crie testes simples para validar seu agente:
 
 ### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
+- **Pergunta:** "Quanto gastei esse mês?"
 - **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+### Teste 2: Análise de categoria
+- **Pergunta:** "Onde eu mais gasto?"
+- **Resposta esperada:** Moradia (maior gasto), seguido por alimentação
+- **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 3: Pergunta fora do escopo
+### Teste 3: Recomendação de produto
+- **Pergunta:** "Qual investimento você recomenda?"
+- **Resposta esperada:** Tesouro Selic ou CDB (baixo risco, perfil moderado)
+- **Resultado:** [x] Correto  [ ] Incorreto
+
+### Teste 4: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta esperada:** O agente informa que não trata esse tipo de informação
+- **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 4: Informação inexistente
+### Teste 5: Informação inexistente
 - **Pergunta:** "Quanto rende o produto XYZ?"
 - **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ---
 
 ## Resultados
 
-Após os testes, registre suas conclusões:
+O que funcionou bem:
 
-**O que funcionou bem:**
-- [Liste aqui]
+- Respostas baseadas corretamente nos dados do usuário
+- Boa coerência com o perfil de investidor (moderado)
+- Capacidade de evitar alucinações
+- Clareza nas respostas
 
-**O que pode melhorar:**
-- [Liste aqui]
+O que pode melhorar:
+
+- Adicionar mais dados para análises mais profundas
+- Melhorar detalhamento das recomendações financeiras
+- Implementar respostas mais dinâmicas com IA
+- Criar interface visual para facilitar o uso
 
 ---
 
 ## Métricas Avançadas (Opcional)
 
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
+Para evolução do projeto, podem ser consideradas:
 
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
+Tempo de resposta do chatbot
+Consumo de recursos (API / processamento)
+Registro de logs de interação
+Monitoramento de erros
 
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+Ferramentas como LangWatch e LangFuse podem ser utilizadas para monitoramento mais avançado em aplicações com IA.
