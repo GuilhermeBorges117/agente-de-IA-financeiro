@@ -3,7 +3,6 @@
 ## Caso de Uso
 
 ### Problema
-> Qual problema financeiro seu agente resolve?
 
 Muitas pessoas não possuem controle sobre suas finanças pessoais, não sabem para onde o dinheiro está indo e têm dificuldade em organizar gastos, definir metas e escolher investimentos adequados ao seu perfil.
 
@@ -23,7 +22,6 @@ O Nexus Finance Bot resolve esse problema atuando como um assistente financeiro 
 O agente atua de forma proativa, identificando padrões de gasto e alertando o usuário quando necessário.
 
 ### Público-Alvo
-> Quem vai usar esse agente?
 
 - Pessoas que desejam organizar suas finanças pessoais
 - Iniciantes no mundo dos investimentos
