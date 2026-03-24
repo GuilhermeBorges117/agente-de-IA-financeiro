@@ -5,39 +5,59 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Muitas pessoas não possuem controle sobre suas finanças pessoais, não sabem para onde o dinheiro está indo e têm dificuldade em organizar gastos, definir metas e escolher investimentos adequados ao seu perfil.
+
+Além disso, a falta de educação financeira e de ferramentas simples dificulta a tomada de decisões financeiras no dia a dia.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+O Nexus Finance Bot resolve esse problema atuando como um assistente financeiro inteligente que:
+
+- Permite o registro rápido de gastos e receitas
+- Analisa o comportamento financeiro do usuário
+- Acompanha metas financeiras e progresso
+- Sugere investimentos com base no perfil do usuário
+- Responde dúvidas financeiras com base em dados estruturados
+
+O agente atua de forma proativa, identificando padrões de gasto e alertando o usuário quando necessário.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+- Pessoas que desejam organizar suas finanças pessoais
+- Iniciantes no mundo dos investimentos
+- Usuários que querem acompanhar metas financeiras
+- Pequenos investidores que buscam orientação básica
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Nexus Finance Bot
 
 ### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+O agente possui uma personalidade:
+
+- Consultiva (orienta o usuário)
+- Educativa (explica conceitos financeiros)
+- Proativa (identifica problemas e sugere melhorias)
+- Objetiva (respostas claras e diretas)
 
 ### Tom de Comunicação
-> Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+- Acessível e amigável
+- Levemente informal
+- Claro e direto
+- Evita termos técnicos complexos sem explicação
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+
+- Saudação: "Olá! Vamos organizar suas finanças hoje? 💰"
+- Confirmação: "Perfeito, já registrei esse gasto para você."
+- Erro/Limitação: "Não encontrei essa informação, mas posso te ajudar a analisar seus gastos ou metas."
 
 ---
 
@@ -47,22 +67,22 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
-    D --> C
-    C --> E[Validação]
-    E --> F[Resposta]
+  A[Usuário] -->|Mensagem|
+  B[Chatbot] B --> C[Processamento]
+  C --> D[Base de Dados CSV/JSON]
+  D --> C
+  C --> E[Análise Financeira]
+  E --> F[Resposta Personalizada]
 ```
 
 ### Componentes
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Chatbot (futuro: Telegram ou aplicação web) |
+| LLM | Modelo de linguagem para interpretação e resposta |
+| Base de Conhecimento | Arquivos CSV e JSON com dados financeiros do usuário |
+| Validação | Regras para evitar respostas incorretas ou sem base|
 
 ---
 
@@ -70,12 +90,16 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [x] O agente responde apenas com base nos dados disponíveis
+- [x] Evita criar informações não existentes
+- [x] Quando não possui dados, informa claramente ao usuário
+- [x] Recomenda investimentos apenas com base no perfil do usuário
+- [x] Utiliza dados estruturados (CSV/JSON) como fonte confiável
 
 ### Limitações Declaradas
-> O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- Não acessa dados bancários reais
+- Não substitui um consultor financeiro profissional
+- Não realiza transações financeiras
+- Não garante rentabilidade de investimentos
+- Depende da qualidade dos dados fornecidos pelo usuário
