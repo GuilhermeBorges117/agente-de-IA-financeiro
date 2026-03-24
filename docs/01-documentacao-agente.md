@@ -73,6 +73,7 @@ flowchart TD
   D --> C
   C --> E[Análise Financeira]
   E --> F[Resposta Personalizada]
+
 ```
 
 ### Componentes
