@@ -9,7 +9,6 @@ Muitas pessoas não possuem controle sobre suas finanças pessoais, não sabem p
 Além disso, a falta de educação financeira e de ferramentas simples dificulta a tomada de decisões financeiras no dia a dia.
 
 ### Solução
-> Como o agente resolve esse problema de forma proativa?
 
 O Nexus Finance Bot resolve esse problema atuando como um assistente financeiro inteligente que:
 
