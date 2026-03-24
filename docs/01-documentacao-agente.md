@@ -67,8 +67,7 @@ O agente possui uma personalidade:
 ```mermaid
 
 flowchart TD
-A[Usuário] -->|Mensagem|
-B[Chatbot]
+A[Usuário] -->|Mensagem| B[Chatbot]
 B --> C[Processamento]
 C --> D[Base de Dados CSV/JSON]
 D --> C
