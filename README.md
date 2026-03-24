@@ -19,12 +19,10 @@ Este projeto apresenta o desenvolvimento de um assistente financeiro que ajuda u
 
 ### 1. Documentação do Agente
 
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+- Caso de uso e problema resolvido
+- Persona e tom de voz
+- Arquitetura do sistema
+- Estratégias de segurança (anti-alucinação)
 
 📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
 
@@ -61,7 +59,7 @@ Documente os prompts que definem o comportamento do seu agente:
 
 ### 4. Aplicação Funcional
 
-Desenvolva um **protótipo funcional** do seu agente:
+Protótipo do chatbot:
 
 - Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
 - Integração com LLM (via API ou modelo local)
@@ -73,7 +71,7 @@ Desenvolva um **protótipo funcional** do seu agente:
 
 ### 5. Avaliação e Métricas
 
-Descreva como você avalia a qualidade do seu agente:
+Avaliação do desempenho do agente::
 
 **Métricas Sugeridas:**
 - Precisão/assertividade das respostas
@@ -141,10 +139,23 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 
 ---
 
-## Dicas Finais
+🚀 Objetivo do Projeto
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+Este projeto foi desenvolvido com o objetivo de:
+
+- Aplicar conceitos de programação em Python
+- Trabalhar com dados estruturados
+- Criar um sistema real para portfólio
+- Desenvolver um assistente financeiro inteligente
+
+📈 Futuras Melhorias
+
+- Integração com Telegram
+- Dashboard com gráficos
+- IA para análise de comportamento financeiro
+- Integração com Open Finance
+
+👨‍💻 Autor
+
+Guilherme Borges
+Projeto educacional com foco em aprendizado e evolução na área de tecnologia.
