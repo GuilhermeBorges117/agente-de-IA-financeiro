@@ -1,13 +1,17 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 Nexus Finance Bot – Assistente Financeiro Inteligente
+
+🚀 Projeto desenvolvido como parte do desafio da DIO, com foco na criação de um agente financeiro inteligente utilizando IA e dados estruturados.
 
 ## Contexto
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots para agentes inteligentes capazes de analisar dados, antecipar necessidades e oferecer recomendações personalizadas.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+Este projeto apresenta o desenvolvimento de um assistente financeiro que ajuda usuários a:
+
+- **Controlar gastos de forma automatizada
+- **Acompanhar metas financeiras
+- **Receber recomendações de investimento personalizadas
+- **Entender melhor seu comportamento financeiro
 
 > [!TIP]
 > Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
